@@ -5,11 +5,39 @@
         <meta charset="UTF-8" />
     </head>
 
-    <body>
-        <main>
-            <h1> happy birthday mom!!!
-                <p> you are on a secret mission. someone has taken your birthday gifts and hidden them all over :( !! U will have to answer some clues to find them!</p>
-            </h1>
-        </main>
-    </body>
+    <body>      
+    Enter the secret password.
+    <input type="password" id = 'password0'>
+    <input type="checkbox" onclick='protectpasscode1()'>
+    
+    <p id = 'firstclue'>
+
+        here i put the first clue. the script will see if the password is true and then will show this text if it is omggg
+    </p>
+    <p id = 'wrong'> wrong password! <p>
+
+<script>
+    function protectpasscode1() {
+        var a = document.getElementById('password')
+        var b = document.getElementById('firstclue')
+        var c = document.getElementById('wrong')
+
+        if (a == 'YadiMookie') {
+            b.style.display = 'block'
+            c.style.display = 'none'
+        }
+        else {
+            c.style.display = 'block'
+            b.style.display = 'none'
+        }
+
+
+    }
+
+
+
+</script>
+</body>
+
+
 </html>
